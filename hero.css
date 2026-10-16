@@ -1,0 +1,20 @@
+/* Art-directed hero: horizontal composition on desktop, portrait on mobile. */
+.hero{padding-top:0;background:#fcf9f6}
+.hero-stage{position:relative;isolation:isolate;min-height:620px}
+.hero-grid{display:block;min-height:clamp(620px,53vw,800px)}
+.hero-copy{position:relative;z-index:1;width:46%;max-width:520px;padding:80px 0}
+.hero-artwork{position:absolute;inset:0;z-index:0;display:block}
+.hero-artwork img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-bottom{position:relative;background:var(--cream)}
+@media(min-width:1800px){.hero-copy{padding:105px 0}.hero-artwork img{object-position:center 28%}}
+@media(min-width:761px) and (max-width:1100px){.hero-copy{padding:64px 0}.hero h1{font-size:clamp(38px,4.6vw,50px)}.hero-description{font-size:16px}.hero .eyebrow{font-size:9px;letter-spacing:.11em}.hero .button-primary{font-size:13px;gap:16px}}
+@media(max-width:760px){
+  .hero-stage{min-height:0}
+  .hero-grid{min-height:0}
+  .hero-copy{width:100%;max-width:600px;margin-inline:auto;padding:36px 0 0}
+  .hero h1{max-width:560px}
+  .hero-description{max-width:520px}
+  .hero-artwork{position:relative;inset:auto;width:100%;max-width:600px;aspect-ratio:1536/2280;margin:0 auto;overflow:hidden}
+  .hero-artwork img{object-position:center bottom}
+  .hero-locations{flex-direction:row}
+}

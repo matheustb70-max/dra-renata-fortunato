@@ -16,7 +16,9 @@
   <link rel="stylesheet" href="assets/manrope.css">
   <link rel="stylesheet" href="assets/dm-sans.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="preload" as="image" href="assets/renata-hero-1040.webp" imagesrcset="assets/renata-hero-520.webp 520w, assets/renata-hero-1040.webp 1040w" imagesizes="(max-width: 700px) 90vw, 42vw">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="preload" as="image" media="(min-width: 761px)" href="assets/hero-desktop-2400.webp" imagesrcset="assets/hero-desktop-1440.webp 1440w, assets/hero-desktop-2400.webp 2400w" imagesizes="100vw">
+  <link rel="preload" as="image" media="(max-width: 760px)" href="assets/hero-mobile-960.webp" imagesrcset="assets/hero-mobile-480.webp 480w, assets/hero-mobile-960.webp 960w" imagesizes="(max-width: 600px) 100vw, 600px">
   <script src="assets/lucide.min.js" defer></script>
   <script src="app.js" defer></script>
 </head>
@@ -37,6 +39,7 @@
   </header>
   <main id="conteudo">
     <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-stage">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-dot"></span> ENDOCRINOLOGIA E METABOLOGIA</p>
@@ -46,10 +49,11 @@
           <div class="hero-locations"><span><i data-lucide="map-pin" aria-hidden="true"></i>Tubarão, SC</span><span><i data-lucide="video" aria-hidden="true"></i>Presencial e online</span></div>
           <p class="hero-registration">CRM-SC 18988 <span>·</span> RQE 17353</p>
         </div>
-        <figure class="hero-portrait">
-          <img src="assets/renata-hero-1040.webp" srcset="assets/renata-hero-520.webp 520w, assets/renata-hero-1040.webp 1040w" sizes="(max-width: 700px) 90vw, 42vw" width="1040" height="1521" alt="Dra. Renata Fortunato, médica endocrinologista" fetchpriority="high">
-          <figcaption><span>Dra. Renata Fortunato</span><small>Ciência, escuta e cuidado.</small><img src="assets/simbolo-original.svg" width="50" height="34" alt=""></figcaption>
-        </figure>
+      </div>
+      <picture class="hero-artwork">
+        <source media="(max-width: 760px)" srcset="assets/hero-mobile-480.webp 480w, assets/hero-mobile-960.webp 960w" sizes="(max-width: 600px) 100vw, 600px" width="960" height="1720">
+        <img src="assets/hero-desktop-2400.webp" srcset="assets/hero-desktop-1440.webp 1440w, assets/hero-desktop-2400.webp 2400w" sizes="100vw" width="2400" height="1350" alt="Dra. Renata Fortunato, médica endocrinologista" fetchpriority="high">
+      </picture>
       </div>
       <div class="container hero-bottom"><span>Um cuidado que considera você por inteiro.</span><a href="#endocrinologia" class="discover">Conheça o atendimento<i data-lucide="arrow-down" aria-hidden="true"></i></a></div>
     </section>

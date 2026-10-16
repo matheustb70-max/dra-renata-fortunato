@@ -12,6 +12,8 @@ GitHub Pages: branch `main`, pasta raiz. Os caminhos relativos de arquivos permi
 
 ## Conteúdo
 
+As imagens horizontal e vertical da hero foram fornecidas pelo cliente e preparadas em WebP com versões responsivas. A composição horizontal é usada acima de 760px; a vertical, no celular.
+
 Fotografias, símbolo, formação, contatos e trechos de depoimentos têm como fonte o [site da médica](https://drarenatafortunato.com.br/). Os depoimentos são uma seleção pontual, sem sincronização automática. Não foram acrescentadas notas, estatísticas ou avaliações fictícias.
 
 O endereço e o registro profissional foram conferidos também no [perfil público da médica](https://www.doctoralia.com.br/renata-fortunato-da-silva/endocrinologista-medico-clinico-geral/tubarao). As áreas da especialidade seguem a [SBEM](https://www.endocrino.org.br/2008/03/14/endocrinologistas-conheca-o-que-eles-podem-fazer-por-sua-saude/).
